@@ -1,3 +1,8 @@
+;; SLAE Assignment #3: EGG Hunter Using Sigaction Method
+;; Website:  http://blog.jsiob.com
+;; SLAE-ID: 1400
+
+
 global _start
 
 section .text
