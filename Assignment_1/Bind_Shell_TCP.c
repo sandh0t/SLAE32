@@ -1,5 +1,4 @@
 // SLAE Assignment #1: Shell Bind TCP (Linux/x86) 
-// Author:   Ayoub Safa (@)
 // Website:  http://blog.jsiob.com
 // SLAE-ID: 1400
  
