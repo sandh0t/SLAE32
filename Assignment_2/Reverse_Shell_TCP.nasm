@@ -1,3 +1,8 @@
+;; SLAE Assignment #1: Reverse Bind TCP (Linux/x86) 
+;; Website:  http://blog.jsiob.com
+;; SLAE-ID: 1400
+
+
 global _start
 
 section .text
