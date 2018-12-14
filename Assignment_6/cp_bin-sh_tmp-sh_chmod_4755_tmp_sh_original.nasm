@@ -1,4 +1,4 @@
-;; SLAE Assignment #6: original shellcode cp /bin/sh /tmp/sh; chmod 4755 /tmp/sh
+;; SLAE Assignment #6: Original Shellcode cp /bin/sh /tmp/sh; chmod 4755 /tmp/sh
 ;; Website:  http://blog.jsiob.com
 ;; SLAE-ID: 1400
 ;; ShellCode: http://shell-storm.org/shellcode/files/shellcode-540.php
