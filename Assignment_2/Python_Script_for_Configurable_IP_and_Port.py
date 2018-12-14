@@ -1,4 +1,4 @@
-# SLAE Assignment #1: Shellcode Reverse TCP (Linux/x86) 
+# SLAE Assignment #2: Create Reverse TCP Shellcode with confgurable IP and Port
 # Website:  http://blog.jsiob.com
 # SLAE-ID: 1400
 
