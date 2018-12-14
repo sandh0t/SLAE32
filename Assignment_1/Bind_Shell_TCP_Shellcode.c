@@ -1,3 +1,7 @@
+// SLAE Assignment #1: Shellcode Bind TCP (Linux/x86) 
+// Website:  http://blog.jsiob.com
+// SLAE-ID: 1400
+
 #include<stdio.h>
 #include<string.h>
 
