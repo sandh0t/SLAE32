@@ -1,4 +1,4 @@
-# SLAE Assignment #1: Shell Bind TCP (Linux/x86) 
+# SLAE Assignment #1: Create Bind TCP Shell Shellcode with confgurable Port
 # Website:  http://blog.jsiob.com
 # SLAE-ID: 1400
 
